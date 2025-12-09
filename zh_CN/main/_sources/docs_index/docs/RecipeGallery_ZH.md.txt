@@ -20,8 +20,8 @@
 [Data-Juicer-Hub](https://github.com/datajuicer/data-juicer-hub/tree/main/demo)中放置了一些基础配置文件，用于帮助用户快速熟悉 Data-Juicer 的基本功能，请参阅以获取详细说明。
 
 ## 2. 复现开源文本数据集
-- 我们复现了部分 Redpajama 数据集的处理流程，请参阅 [reproduced_redpajama](https://datajuicer.github.io/data-juicer/zh_CN/main/docs/hub/RedPajama_ZH.html) 文件夹以获取详细说明。
-- 我们重现了部分 BLOOM 数据集的处理流程，请参阅 [reproduced_bloom](https://datajuicer.github.io/data-juicer/zh_CN/main/docs/hub/BLOOM_ZH.html) 文件夹以获取详细说明。
+- 我们复现了部分 Redpajama 数据集的处理流程，请参阅 [reproduced_redpajama](https://datajuicer.github.io/data-juicer-hub/zh_CN/main/docs_index/docs/RedPajama_ZH.html) 文件夹以获取详细说明。
+- 我们重现了部分 BLOOM 数据集的处理流程，请参阅 [reproduced_bloom](https://datajuicer.github.io/data-juicer-hub/zh_CN/main/docs_index/docs/BLOOM_ZH.html) 文件夹以获取详细说明。
 
 ## 3. 改良开源文本预训练数据集
 

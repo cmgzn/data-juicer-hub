@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>&lt;no title&gt; &#8212; Data Juicer Hub</title>
+    <title>Data-Juicer-Hub &#8212; Data Juicer Hub</title>
   
   
   
@@ -32,7 +32,7 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=0f2a0175" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b26f9bd0" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -47,6 +47,7 @@
     <script src="_static/copybutton.js?v=f281be69"></script>
     <script src="_static/translations.js?v=beaddf03"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index_ZH';</script>
+    <script src="_static/sidebar.js?v=9ff78125"></script>
     <link rel="icon" href="_static/icon.png"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -442,13 +443,36 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div class="toctree-wrapper compound">
+  <section id="data-juicer-hub">
+<h1>Data-Juicer-Hub<a class="headerlink" href="#data-juicer-hub" title="Link to this heading">#</a></h1>
+<p>面向各种预训练/微调任务的社区驱动型数据处理配方与最佳实践。</p>
+<section id="id1">
+<h2>文档<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>文档主页请访问 <a class="reference external" href="https://datajuicer.github.io/data-juicer-hub/en/main/">这里</a>。</p>
+<p>详细配方说明请访问 <a class="reference external" href="https://datajuicer.github.io/data-juicer-hub/en/main/docs_index/docs/RecipeGallery.html">这里</a>。</p>
+</section>
+<section id="id2">
+<h2>快速开始<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>本项目提供了多种针对不同任务的数据处理配方，你可以通过克隆此仓库并使用 <code class="docutils literal notranslate"><span class="pre">--config</span></code> 参数指定目标配方文件的本地路径来直接使用它们：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># 克隆到你本地机器上的某个位置</span>
+git<span class="w"> </span>clone<span class="w"> </span>https://github.com/datajuicer/data-juicer-hub.git
+<span class="c1"># 使用实际的本地路径运行目标配方</span>
+dj-process<span class="w"> </span>--config<span class="w"> </span>&lt;data-juicer-hub根目录&gt;/demo/process.yaml<span class="w"> </span>--dataset_path<span class="w"> </span>&lt;你的数据集路径&gt;
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h2>贡献指南<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<p>这是一个由社区驱动的仓库，欢迎你上传自己的数据处理配方！😄</p>
+</section>
+</section>
+<div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs_index/index_ZH.html">文档</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs_index/docs/RecipeGallery_ZH.html">数据菜谱Gallery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs_index/docs/AlpacaCOT_ZH.html">Alpaca-CoT 完善配置文件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs_index/docs/AnnotationNotificationSystem.html">Notification System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs_index/docs/BLOOM_ZH.html">BLOOM 配置文件</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs_index/docs/RecipeGallery_ZH.html">数据菜谱Gallery</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs_index/docs/RedPajama_ZH.html">Redpajama 配置文件</a></li>
 </ul>
 </li>
@@ -484,6 +508,20 @@
                 <dialog id="pst-secondary-sidebar-modal"></dialog>
                 <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> 当前页面
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">文档</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">快速开始</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">贡献指南</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
