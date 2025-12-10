@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="zh-CN" data-content_root="../" >
+<html lang="en" data-content_root="../" >
 
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>文档 &#8212; Data Juicer Hub</title>
+    <title>BLOOM Config Files &#8212; Data Juicer Hub</title>
   
   
   
@@ -40,19 +40,20 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
-    <script src="../_static/documentation_options.js?v=91bfbbb6"></script>
+    <script src="../_static/documentation_options.js?v=8a448e45"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/translations.js?v=beaddf03"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'docs_index/index_ZH';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'docs/BLOOM';</script>
     <script src="../_static/sidebar.js?v=9ff78125"></script>
     <link rel="icon" href="../_static/icon.png"/>
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Redpajama Config Files" href="RedPajama.html" />
+    <link rel="prev" title="Notification System" href="AnnotationNotificationSystem.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="zh-CN"/>
+  <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
   </head>
   
@@ -61,12 +62,12 @@
 
   
   
-  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">跳转至主要内容</a></div>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>回到顶部</button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
   <dialog id="pst-search-dialog">
@@ -89,13 +90,13 @@
   </dialog>
 
   <div class="pst-async-banner-revealer d-none">
-  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="版本警告"></aside>
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
     <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="网页导航">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
   </button>
   
@@ -108,7 +109,7 @@
     
   
 
-<a class="navbar-brand logo" href="../index_ZH.html">
+<a class="navbar-brand logo" href="../index.html">
   
   
   
@@ -137,29 +138,29 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../docs_index_ZH.html">
-    文档
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../docs_index.html">
+    DOCS
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer/zh_CN/main/">
+  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer/en/main/">
     Core
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-sandbox/zh_CN/main/">
+  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-sandbox/en/main/">
     Sandbox
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-agents/zh_CN/main/">
+  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-agents/en/main/">
     Agents
   </a>
 </li>
@@ -175,7 +176,7 @@
         <div class="navbar-item navbar-persistent--container">
           
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
         </div>
@@ -200,8 +201,8 @@
         <div class="navbar-item">
 
 <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
   <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
 </button></div>
       
@@ -210,19 +211,19 @@
   <div class="navbar-dropdown">
     <div class="navbar-dropdown-trigger">
       <span class="dropdown-label">
-        🌐 zh-CN
+        🌐 en
       </span>
       <i class="fa-solid fa-chevron-down dropdown-icon"></i>
     </div>
     <div class="navbar-dropdown-panel">
       <div class="dropdown-content">
         
-        <a href="../../../en/main/docs_index/index.html"
-           class="dropdown-item ">
+        <a href="../../../en/main/docs/BLOOM.html"
+           class="dropdown-item active">
           English
         </a>
         
-        <a href="../../../zh_CN/main/docs_index/index_ZH.html"
+        <a href="../../../zh_CN/main/docs/BLOOM_ZH.html"
            class="dropdown-item ">
           简体中文
         </a>
@@ -243,7 +244,7 @@
     <div class="navbar-dropdown-panel">
       <div class="dropdown-content version-list">
         
-        <a href="../../main/docs_index/index_ZH.html"
+        <a href="../../main/docs/BLOOM.html"
            class="dropdown-item active">
           main
         </a>
@@ -261,14 +262,14 @@
   
     <div class="navbar-persistent--mobile">
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="搜索" aria-label="搜索" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
     </div>
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="当前页面">
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
     </button>
   
@@ -282,10 +283,8 @@
       
       
       
-        
-      
       <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -300,29 +299,29 @@
 <nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-<li class="nav-item ">
-  <a class="nav-link nav-internal" href="../docs_index_ZH.html">
-    文档
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="../docs_index.html">
+    DOCS
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer/zh_CN/main/">
+  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer/en/main/">
     Core
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-sandbox/zh_CN/main/">
+  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-sandbox/en/main/">
     Sandbox
   </a>
 </li>
 
 
 <li class="nav-item ">
-  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-agents/zh_CN/main/">
+  <a class="nav-link nav-external" href="https://datajuicer.github.io/data-juicer-agents/en/main/">
     Agents
   </a>
 </li>
@@ -356,8 +355,8 @@
           <div class="navbar-item">
 
 <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="亮色"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="暗色"></i>
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
   <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
 </button></div>
         
@@ -366,19 +365,19 @@
   <div class="navbar-dropdown">
     <div class="navbar-dropdown-trigger">
       <span class="dropdown-label">
-        🌐 zh-CN
+        🌐 en
       </span>
       <i class="fa-solid fa-chevron-down dropdown-icon"></i>
     </div>
     <div class="navbar-dropdown-panel">
       <div class="dropdown-content">
         
-        <a href="../../../en/main/docs_index/index.html"
-           class="dropdown-item ">
+        <a href="../../../en/main/docs/BLOOM.html"
+           class="dropdown-item active">
           English
         </a>
         
-        <a href="../../../zh_CN/main/docs_index/index_ZH.html"
+        <a href="../../../zh_CN/main/docs/BLOOM_ZH.html"
            class="dropdown-item ">
           简体中文
         </a>
@@ -399,7 +398,7 @@
     <div class="navbar-dropdown-panel">
       <div class="dropdown-content version-list">
         
-        <a href="../../main/docs_index/index_ZH.html"
+        <a href="../../main/docs/BLOOM.html"
            class="dropdown-item active">
           main
         </a>
@@ -413,6 +412,22 @@
       </div>
     
   </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="RecipeGallery.html">Data Recipe Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AlpacaCOT.html">Refine Alpaca-CoT Config Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="AnnotationNotificationSystem.html">Notification System</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">BLOOM Config Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="RedPajama.html">Redpajama Config Files</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
@@ -445,11 +460,14 @@
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
-      <a href="../index_ZH.html" class="nav-link" aria-label="初始页面">
+      <a href="../index.html" class="nav-link" aria-label="Home">
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">文档</span></li>
+    
+    <li class="breadcrumb-item"><a href="../docs_index.html" class="nav-link">DOCS</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">BLOOM Config Files</span></li>
   </ul>
 </nav>
 </div>
@@ -466,52 +484,14 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="id1">
-<h1>文档<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>该项目的文件</p>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="docs/AlpacaCOT_ZH.html">Alpaca-CoT 完善配置文件</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/AlpacaCOT_ZH.html#id1">预处理</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/AlpacaCOT_ZH.html#id3">处理</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="docs/AnnotationNotificationSystem.html">Notification System</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/AnnotationNotificationSystem.html#basic-configuration">Basic Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/AnnotationNotificationSystem.html#channel-specific-settings">Channel-Specific Settings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/AnnotationNotificationSystem.html#email-configuration">Email Configuration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/AnnotationNotificationSystem.html#secure-password-handling">Secure Password Handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/AnnotationNotificationSystem.html#certificate-authentication">Certificate Authentication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/AnnotationNotificationSystem.html#examples">Examples</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="docs/BLOOM_ZH.html">BLOOM 配置文件</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/BLOOM_ZH.html#oscar">Oscar</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="docs/RecipeGallery_ZH.html">数据菜谱Gallery</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#data-juicer">1. Data-Juicer最小示例菜谱</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id1">2. 复现开源文本数据集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id2">3. 改良开源文本预训练数据集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id3">4. 改良开源文本后处理数据集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id4">5. 合成对比学习图文数据集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id5">6. 改良开源图文数据集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id7">7. 面向视频数据的基础实例菜谱</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id8">8. 合成以人为中心的视频评测集</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RecipeGallery_ZH.html#id9">9. 改良现有开源视频数据集</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="docs/RedPajama_ZH.html">Redpajama 配置文件</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="docs/RedPajama_ZH.html#arxiv">arXiv</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RedPajama_ZH.html#books">Books</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RedPajama_ZH.html#code">Code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="docs/RedPajama_ZH.html#stackexchange">StackExchange</a></li>
-</ul>
-</li>
-</ul>
-</div>
+  <section id="bloom-config-files">
+<h1>BLOOM Config Files<a class="headerlink" href="#bloom-config-files" title="Link to this heading">#</a></h1>
+<p>The <a class="reference external" href="https://github.com/datajuicer/data-juicer-hub/tree/main/reproduced_bloom">folder</a> in Data-Juicer-Hub contains example configuration files to easily and quickly reproduce the processing flow of the <a class="reference external" href="https://github.com/bigscience-workshop/data-preparation">ROOTS</a> dataset, created by the BigScience initiative to train the BLOOM models.</p>
+<section id="oscar">
+<h2>Oscar<a class="headerlink" href="#oscar" title="Link to this heading">#</a></h2>
+<p>The raw data files can be downloaded as described in <a class="reference external" href="https://github.com/bigscience-workshop/data-preparation/tree/main/preprocessing/training/01b_oscar_cleaning_and_filtering">BLOOM/Oscar</a>. Then use <a class="reference external" href="https://github.com/datajuicer/data-juicer-hub/blob/main/reproduced_bloom/bloom-oscar.yaml">bloom-oscar.yaml</a> to perform the whole processing.</p>
+<p>An analysis of our reproduction will be published soon.</p>
+</section>
 </section>
 
 
@@ -524,6 +504,24 @@
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="AnnotationNotificationSystem.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Notification System</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="RedPajama.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Redpajama Config Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
@@ -536,11 +534,23 @@
 
 
   <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#oscar">Oscar</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
   <div role="note" aria-label="source link">
-    <h3>本页</h3>
+    <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/docs_index/index_ZH.rst.txt"
-            rel="nofollow">显示源代码</a></li>
+      <li><a href="../_sources/docs/BLOOM.md.txt"
+            rel="nofollow">Show Source</a></li>
     </ul>
    </div></div>
 
@@ -584,7 +594,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3创建。
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3.
     <br/>
   </p>
 </div>
@@ -592,7 +602,7 @@
         <div class="footer-item">
 <p class="theme-version">
   <!-- # L10n: Setting the PST URL as an argument as this does not need to be localized -->
-  使用 <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1构建.
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.16.1.
 </p></div>
       
     </div>
