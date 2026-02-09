@@ -8,7 +8,7 @@
         "ms-python.python"
       ],
       "settings": {
-        "jupyter.notebookFileRoot": "${workspaceFolder}"
+        "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks"
       }
     }
   },
