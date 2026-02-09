@@ -13,5 +13,5 @@
     }
   },
   "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh",
-  "postAttachCommand": "cd notebooks/"
+  "postAttachCommand": "uv venv"
 }
