@@ -8,10 +8,10 @@
         "ms-python.python"
       ],
       "settings": {
-        "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks"
+        "jupyter.notebookFileRoot": "${workspaceFolder}/notebooks/"
       }
     }
   },
-  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh",
+  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && mkdir -p /home/vscode/.cache/data_juicer/models && curl -o /home/vscode/.cache/data_juicer/models/en.arpa.bin https://dail-wlcb.oss-cn-wulanchabu.aliyuncs.com/data_juicer/models/en.arpa.bin",
   "postAttachCommand": "uv venv"
 }
