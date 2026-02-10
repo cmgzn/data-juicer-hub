@@ -67,7 +67,7 @@
 
 ## 📚 更多资源
 
-- [Data Juicer 官方文档](https://github.com/datajuicer/data-juicer)
+- [Data Juicer 官方文档](https://datajuicer.github.io/data-juicer/en/main/)
 - [Data Juicer Hub](https://github.com/cmgzn/data-juicer-hub)
 
 Happy Learning! 🎉
