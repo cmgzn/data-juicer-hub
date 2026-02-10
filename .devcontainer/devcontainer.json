@@ -1,6 +1,9 @@
 {
   "name": "Jupyter Notebook Environment",
-  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "vscode",
   "customizations": {
     "vscode": {
       "extensions": [
@@ -12,6 +15,6 @@
       }
     }
   },
-  "postCreateCommand": "curl -LsSf https://astral.sh/uv/install.sh | sh && mkdir -p /home/vscode/.cache/data_juicer/models && curl -o /home/vscode/.cache/data_juicer/models/en.arpa.bin https://dail-wlcb.oss-cn-wulanchabu.aliyuncs.com/data_juicer/models/en.arpa.bin",
+  "postCreateCommand": "",
   "postAttachCommand": "uv venv"
 }
