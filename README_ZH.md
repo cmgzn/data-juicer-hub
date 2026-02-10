@@ -4,6 +4,8 @@
 
 ## 🚀 快速开始
 
+除下述方法外，您也可以尝试 [JupyterLab Playground with Tutorials](http://8.138.149.181/)。
+
 ### 方式一：Github Codespace
 
 1. **启动 Codespace**
@@ -23,16 +25,16 @@
 
 | 章节 | 标题 | Colab 链接 |
 |------|------|-----------|
-| 01 | 快速入门 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/01_Getting_Started.ipynb) |
-| 02 | 构建 Recipes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/02_Building_Recipes.ipynb) |
-| 03 | 数据格式与加载 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/03_Data_Formats_and_Loading.ipynb) |
-| 04 | DJ Dataset API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/04_DJ_Dataset_API.ipynb) |
-| 05 | 算子使用详解 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/05_Operators_Usage.ipynb) |
-| 06 | 分析与可视化 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/06_Analysis_and_Visualization.ipynb) |
-| 07 | Ray 分布式处理 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/07_Distributed_Processing_with_Ray.ipynb) |
-| 08 | 数据预处理 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/08_Preprocessing.ipynb) |
-| 09 | 多模态数据处理 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/09_Multimodal_Data_Processing.ipynb) |
-| 10 | 高级数据集配置 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cmgzn/data-juicer-hub/blob/notebook/notebooks/10_Advanced_Dataset_Configuration.ipynb) |
+| 01 | 快速入门 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/01_Getting_Started.ipynb) |
+| 02 | 构建 Recipes | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/02_Building_Recipes.ipynb) |
+| 03 | 数据格式与加载 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/03_Data_Formats_and_Loading.ipynb) |
+| 04 | DJ Dataset API | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/04_DJ_Dataset_API.ipynb) |
+| 05 | 算子使用详解 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/05_Operators_Usage.ipynb) |
+| 06 | 分析与可视化 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/06_Analysis_and_Visualization.ipynb) |
+| 07 | Ray 分布式处理 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/07_Distributed_Processing_with_Ray.ipynb) |
+| 08 | 数据预处理 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/08_Preprocessing.ipynb) |
+| 09 | 多模态数据处理 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/09_Multimodal_Data_Processing.ipynb) |
+| 10 | 高级数据集配置 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/datajuicer/data-juicer-hub/blob/notebook/notebooks/10_Advanced_Dataset_Configuration.ipynb) |
 
 # 📝 教程内容概览
 
@@ -43,6 +45,7 @@
 - [**05_Operators_Usage**](./notebooks/05_Operators_Usage.ipynb) - 数据处理算子详解（YAML与Python两种模式）
 - [**06_Analysis_and_Visualization**](./notebooks/06_Analysis_and_Visualization.ipynb) - 数据分析与可视化工具
 - [**07_Distributed_Processing_with_Ray**](./notebooks/07_Distributed_Processing_with_Ray.ipynb) - Ray 分布式处理框架集成
+
 - [**08_Preprocessing**](./notebooks/08_Preprocessing.ipynb) - 数据预处理脚本
 - [**09_Multimodal_Data_Processing**](./notebooks/09_Multimodal_Data_Processing.ipynb) - 多模态数据处理能力
 - [**10_Advanced_Dataset_Configuration**](./notebooks/10_Advanced_Dataset_Configuration.ipynb) - Dataset 高级配置选项
@@ -68,6 +71,6 @@
 ## 📚 更多资源
 
 - [Data Juicer 官方文档](https://datajuicer.github.io/data-juicer/en/main/)
-- [Data Juicer Hub](https://github.com/cmgzn/data-juicer-hub)
+- [Data Juicer Hub](https://github.com/datajuicer/data-juicer-hub)
 
 Happy Learning! 🎉
