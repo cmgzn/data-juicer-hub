@@ -32,7 +32,8 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b26f9bd0" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=34d13042" />
+    <link rel="stylesheet" type="text/css" href="../_static/ask-ai-widget.css?v=62e39679" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -40,14 +41,18 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
+    <script>window.JUICER_API_URL = 'https://datajuicer.online:443';</script>
     <script src="../_static/documentation_options.js?v=91bfbbb6"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/AlpacaCOT_ZH';</script>
-    <script src="../_static/sidebar.js?v=9ff78125"></script>
+    <script src="../_static/sidebar.js?v=3fc1065c"></script>
+    <script src="../_static/switcher-mobile.js?v=07875724"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../_static/ask-ai-widget.js?v=fab4d2ee"></script>
     <link rel="icon" href="../_static/icon.png"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -209,25 +214,36 @@
       
         <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="../../../en/main/docs/AlpacaCOT.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="../../../en/main/docs/AlpacaCOT.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="../../../zh_CN/main/docs/AlpacaCOT_ZH.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="../../../zh_CN/main/docs/AlpacaCOT_ZH.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -235,18 +251,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="../../main/docs/AlpacaCOT_ZH.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -363,25 +384,36 @@
         
           <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="../../../en/main/docs/AlpacaCOT.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="../../../en/main/docs/AlpacaCOT.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="../../../zh_CN/main/docs/AlpacaCOT_ZH.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="../../../zh_CN/main/docs/AlpacaCOT_ZH.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -389,18 +421,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="../../main/docs/AlpacaCOT_ZH.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -424,6 +461,8 @@
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Alpaca-CoT 完善配置文件</a></li>
 <li class="toctree-l1"><a class="reference internal" href="AnnotationNotificationSystem.html">Notification System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="BLOOM_ZH.html">BLOOM 配置文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README_ZH.html">Notebooks 教程</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="RedPajama_ZH.html">Redpajama 配置文件</a></li>
 </ul>
 </div>
@@ -486,18 +525,18 @@
                 <article class="bd-article">
                   
   <section id="alpaca-cot">
-<h1>Alpaca-CoT 完善配置文件<a class="headerlink" href="#alpaca-cot" title="Link to this heading">#</a></h1>
+<h1>Alpaca-CoT 完善配置文件<a class="headerlink" href="#alpaca-cot" title="链接到此标题。">#</a></h1>
 <p>Data-Juicer-Hub 中的<a class="reference external" href="https://github.com/datajuicer/data-juicer-hub/tree/main/refined_recipes/alpaca_cot">文件夹</a>包含的配置文件能够让用户轻松快速地完善 <a class="reference external" href="https://huggingface.co/datasets/QingyiSi/Alpaca-CoT">Alpaca-CoT</a>。</p>
 <p>在开始前，请将 <a class="reference external" href="https://github.com/datajuicer/data-juicer-hub">data-juicer-hub</a> 仓库克隆到本地，其已经包含了大量的数据处理菜谱。</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/datajuicer/data-juicer-hub.git
 </pre></div>
 </div>
 <section id="id1">
-<h2>预处理<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2>预处理<a class="headerlink" href="#id1" title="链接到此标题。">#</a></h2>
 <p>原始数据文件在 HuggingFace 中的 <a class="reference external" href="https://huggingface.co/datasets/QingyiSi/Alpaca-CoT">Alpaca-CoT</a> 下载。</p>
 <section id="alpaca-cot-jsonl">
-<h3>将 Alpaca-CoT 转换为 jsonl 文件<a class="headerlink" href="#alpaca-cot-jsonl" title="Link to this heading">#</a></h3>
-<p>使用 <a class="reference external" href="https://github.com/cmgzn/data-juicer-hub/blob/main/../tools/preprocess/raw_alpaca_cot_merge_add_meta.py">raw_alpaca_cot_merge_add_meta.py</a> 选择数据集的 <code class="docutils literal notranslate"><span class="pre">instruction</span></code>, <code class="docutils literal notranslate"><span class="pre">input</span></code> 和 <code class="docutils literal notranslate"><span class="pre">output</span></code> 3个字段，并使用空格将它们合并到 <code class="docutils literal notranslate"><span class="pre">text</span></code>，同时在数据集中增加额外的[元信息](<a class="github reference external" href="https://github.com/cmgzn/data-juicer-hub/blob/main/docs/">cmgzn/data-juicer-hub</a> #meta_info) ：</p>
+<h3>将 Alpaca-CoT 转换为 jsonl 文件<a class="headerlink" href="#alpaca-cot-jsonl" title="链接到此标题。">#</a></h3>
+<p>使用 <a class="reference external" href="https://github.com/datajuicer/data-juicer/blob/main/tools/preprocess/raw_alpaca_cot_merge_add_meta.py">raw_alpaca_cot_merge_add_meta.py</a> 选择数据集的 <code class="docutils literal notranslate"><span class="pre">instruction</span></code>, <code class="docutils literal notranslate"><span class="pre">input</span></code> 和 <code class="docutils literal notranslate"><span class="pre">output</span></code> 3个字段，并使用空格将它们合并到 <code class="docutils literal notranslate"><span class="pre">text</span></code>，同时在数据集中增加额外的[元信息](<a class="github reference external" href="https://github.com/cmgzn/data-juicer-hub/blob/main/docs/">cmgzn/data-juicer-hub</a> #meta_info) ：</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>tools/preprocess/raw_alpaca_cot_merge_add_meta.py<span class="w">    </span><span class="se">\</span>
 <span class="w">    </span>--src_dir<span class="w">             </span>&lt;Alpaca-CoT_src_dir&gt;<span class="w">              </span><span class="se">\</span>
 <span class="w">    </span>--target_dir<span class="w">          </span>&lt;target_dir&gt;<span class="w">                      </span><span class="se">\</span>
@@ -506,8 +545,8 @@
 </div>
 </section>
 <section id="id2">
-<h3>按照语言将数据集拆分子数据集<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
-<p>使用 <a class="reference external" href="https://github.com/cmgzn/data-juicer-hub/blob/main/../tools/preprocess/dataset_split_by_language.py">dataset_split_by_language.py</a> 将数据集拆分为中文和英文：</p>
+<h3>按照语言将数据集拆分子数据集<a class="headerlink" href="#id2" title="链接到此标题。">#</a></h3>
+<p>使用 <a class="reference external" href="https://github.com/datajuicer/data-juicer/blob/main/tools/preprocess/dataset_split_by_language.py">dataset_split_by_language.py</a> 将数据集拆分为中文和英文：</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>tools/preprocess/dataset_split_by_language.py<span class="w">    </span><span class="se">\</span>
 <span class="w">    </span>--src_dir<span class="w">             </span>&lt;src_dir&gt;<span class="w">                     </span><span class="se">\</span>
 <span class="w">    </span>--target_dir<span class="w">          </span>&lt;target_dir&gt;<span class="w">                  </span><span class="se">\</span>
@@ -518,7 +557,7 @@
 </section>
 </section>
 <section id="id3">
-<h2>处理<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2>处理<a class="headerlink" href="#id3" title="链接到此标题。">#</a></h2>
 <p>在预处理完成之后，修改 <a class="reference external" href="https://github.com/datajuicer/data-juicer-hub/tree/main/refined_recipes/alpaca_cot/alpaca-cot-en-refine.yaml">alpaca-cot-en-refine.yaml</a> 和 <a class="reference external" href="https://github.com/datajuicer/data-juicer-hub/tree/main/refined_recipes/alpaca_cot/alpaca-cot-zh-refine.yaml">alpaca-cot-zh-refine.yaml</a> 中的数据集路径，然后执行以下命令来复现完善过的 Alpaca-CoT 的处理流程。</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># refine English dataset</span>
 python<span class="w"> </span>tools/process_data.py<span class="w"> </span>--config<span class="w"> </span>&lt;path-to-data-juicer-hub&gt;/refined_recipes/alpaca_cot/alpaca-cot-en-refine.yaml
@@ -528,10 +567,10 @@ python<span class="w"> </span>tools/process_data.py<span class="w"> </span>--con
 </pre></div>
 </div>
 <section id="id4">
-<h3>元信息 <a name="meta_info"/><a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<h3>元信息 <a name="meta_info"/><a class="headerlink" href="#id4" title="链接到此标题。">#</a></h3>
 <p>在完善后的 Alpaca-CoT 的数据集中每个样本都包含元信息，标签说明如下：</p>
 <section id="id5">
-<h4>Alpaca-CoT 元信息<a class="headerlink" href="#id5" title="Link to this heading">#</a></h4>
+<h4>Alpaca-CoT 元信息<a class="headerlink" href="#id5" title="链接到此标题。">#</a></h4>
 <ul class="simple">
 <li><p>Language 标签:</p>
 <ul>
@@ -557,7 +596,7 @@ python<span class="w"> </span>tools/process_data.py<span class="w"> </span>--con
 </ul>
 </section>
 <section id="data-juicer">
-<h4>Data-Juicer 元信息<a class="headerlink" href="#data-juicer" title="Link to this heading">#</a></h4>
+<h4>Data-Juicer 元信息<a class="headerlink" href="#data-juicer" title="链接到此标题。">#</a></h4>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Dataset</span></code>: Alpaca-CoT 中的数据集名称</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">origin_path</span></code>: Alpaca-CoT 中的原始文件路径</p></li>
@@ -572,7 +611,7 @@ python<span class="w"> </span>tools/process_data.py<span class="w"> </span>--con
 </ul>
 </section>
 <section id="id6">
-<h4>完善的 Alpaca-CoT 数据集元信息<a class="headerlink" href="#id6" title="Link to this heading">#</a></h4>
+<h4>完善的 Alpaca-CoT 数据集元信息<a class="headerlink" href="#id6" title="链接到此标题。">#</a></h4>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p></p></th>
@@ -1088,7 +1127,7 @@ python<span class="w"> </span>tools/process_data.py<span class="w"> </span>--con
         <div class="footer-item">
 
   <p class="sphinx-version">
-    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3创建。
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4创建。
     <br/>
   </p>
 </div>

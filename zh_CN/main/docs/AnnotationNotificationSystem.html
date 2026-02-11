@@ -32,7 +32,8 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=b26f9bd0" />
+    <link rel="stylesheet" type="text/css" href="../_static/custom.css?v=34d13042" />
+    <link rel="stylesheet" type="text/css" href="../_static/ask-ai-widget.css?v=62e39679" />
   
   <!-- So that users can add custom icons -->
   <script src="../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -40,14 +41,18 @@
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
+    <script>window.JUICER_API_URL = 'https://datajuicer.online:443';</script>
     <script src="../_static/documentation_options.js?v=91bfbbb6"></script>
-    <script src="../_static/doctools.js?v=9bcbadda"></script>
-    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/translations.js?v=beaddf03"></script>
+    <script src="../_static/translations.js?v=540d3cec"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/AnnotationNotificationSystem';</script>
-    <script src="../_static/sidebar.js?v=9ff78125"></script>
+    <script src="../_static/sidebar.js?v=3fc1065c"></script>
+    <script src="../_static/switcher-mobile.js?v=07875724"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../_static/ask-ai-widget.js?v=fab4d2ee"></script>
     <link rel="icon" href="../_static/icon.png"/>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
@@ -209,25 +214,36 @@
       
         <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="../../../en/main/docs/AnnotationNotificationSystem.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="../../../en/main/docs/AnnotationNotificationSystem.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="../../../zh_CN/main/docs/AnnotationNotificationSystem.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="../../../zh_CN/main/docs/AnnotationNotificationSystem.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -235,18 +251,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="../../main/docs/AnnotationNotificationSystem.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -363,25 +384,36 @@
         
           <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="../../../en/main/docs/AnnotationNotificationSystem.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="../../../en/main/docs/AnnotationNotificationSystem.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="../../../zh_CN/main/docs/AnnotationNotificationSystem.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="../../../zh_CN/main/docs/AnnotationNotificationSystem.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -389,18 +421,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="../../main/docs/AnnotationNotificationSystem.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -424,6 +461,8 @@
 <li class="toctree-l1"><a class="reference internal" href="AlpacaCOT_ZH.html">Alpaca-CoT 完善配置文件</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Notification System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="BLOOM_ZH.html">BLOOM 配置文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="README_ZH.html">Notebooks 教程</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="RedPajama_ZH.html">Redpajama 配置文件</a></li>
 </ul>
 </div>
@@ -486,10 +525,10 @@
                 <article class="bd-article">
                   
   <section id="notification-system">
-<h1>Notification System<a class="headerlink" href="#notification-system" title="Link to this heading">#</a></h1>
+<h1>Notification System<a class="headerlink" href="#notification-system" title="链接到此标题。">#</a></h1>
 <p>Data Juicer supports notifications for operators that inherit from the <code class="docutils literal notranslate"><span class="pre">NotificationMixin</span></code> class. Each operator defines its own notification configuration, which can include email, Slack, and DingTalk notifications.</p>
 <section id="basic-configuration">
-<h2>Basic Configuration<a class="headerlink" href="#basic-configuration" title="Link to this heading">#</a></h2>
+<h2>Basic Configuration<a class="headerlink" href="#basic-configuration" title="链接到此标题。">#</a></h2>
 <p>To enable notifications for an operator:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">human_preference_annotation_mapper</span><span class="p">:</span>
 <span class="w">    </span><span class="c1"># Enable notifications for this operator</span>
@@ -513,7 +552,7 @@
 </div>
 </section>
 <section id="channel-specific-settings">
-<h2>Channel-Specific Settings<a class="headerlink" href="#channel-specific-settings" title="Link to this heading">#</a></h2>
+<h2>Channel-Specific Settings<a class="headerlink" href="#channel-specific-settings" title="链接到此标题。">#</a></h2>
 <p>Each notification channel (email, Slack, DingTalk) can be independently enabled or disabled:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">notification_config</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w">  </span><span class="c1"># Master switch for notifications</span>
@@ -533,10 +572,10 @@
 </div>
 </section>
 <section id="email-configuration">
-<h2>Email Configuration<a class="headerlink" href="#email-configuration" title="Link to this heading">#</a></h2>
+<h2>Email Configuration<a class="headerlink" href="#email-configuration" title="链接到此标题。">#</a></h2>
 <p>Email notifications support various server configurations:</p>
 <section id="standard-smtp-with-starttls">
-<h3>Standard SMTP with STARTTLS:<a class="headerlink" href="#standard-smtp-with-starttls" title="Link to this heading">#</a></h3>
+<h3>Standard SMTP with STARTTLS:<a class="headerlink" href="#standard-smtp-with-starttls" title="链接到此标题。">#</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">email</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="nt">smtp_server</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;smtp.example.com&quot;</span>
@@ -549,7 +588,7 @@
 </div>
 </section>
 <section id="direct-ssl-connection-e-g-gmail">
-<h3>Direct SSL Connection (e.g., Gmail):<a class="headerlink" href="#direct-ssl-connection-e-g-gmail" title="Link to this heading">#</a></h3>
+<h3>Direct SSL Connection (e.g., Gmail):<a class="headerlink" href="#direct-ssl-connection-e-g-gmail" title="链接到此标题。">#</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">email</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="nt">smtp_server</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;smtp.gmail.com&quot;</span>
@@ -562,7 +601,7 @@
 </div>
 </section>
 <section id="alibaba-email-server">
-<h3>Alibaba Email Server:<a class="headerlink" href="#alibaba-email-server" title="Link to this heading">#</a></h3>
+<h3>Alibaba Email Server:<a class="headerlink" href="#alibaba-email-server" title="链接到此标题。">#</a></h3>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">email</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="nt">smtp_server</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;smtp.alibaba-inc.com&quot;</span>
@@ -580,7 +619,7 @@
 </section>
 </section>
 <section id="secure-password-handling">
-<h2>Secure Password Handling<a class="headerlink" href="#secure-password-handling" title="Link to this heading">#</a></h2>
+<h2>Secure Password Handling<a class="headerlink" href="#secure-password-handling" title="链接到此标题。">#</a></h2>
 <p>For security, passwords should be provided via environment variables:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># General email password</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">DATA_JUICER_EMAIL_PASSWORD</span><span class="o">=</span><span class="s2">&quot;your_password&quot;</span>
@@ -595,7 +634,7 @@
 </div>
 </section>
 <section id="certificate-authentication">
-<h2>Certificate Authentication<a class="headerlink" href="#certificate-authentication" title="Link to this heading">#</a></h2>
+<h2>Certificate Authentication<a class="headerlink" href="#certificate-authentication" title="链接到此标题。">#</a></h2>
 <p>For enhanced security, you can use TLS client certificates:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">email</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -610,7 +649,7 @@
 </div>
 </section>
 <section id="examples">
-<h2>Examples<a class="headerlink" href="#examples" title="Link to this heading">#</a></h2>
+<h2>Examples<a class="headerlink" href="#examples" title="链接到此标题。">#</a></h2>
 <p>See these example configuration files:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/datajuicer/data-juicer-hub/blob/main/annotation_config/annotation_with_notifications.yaml"><code class="docutils literal notranslate"><span class="pre">annotation_with_notifications.yaml</span></code></a>: Shows how to use notifications with annotation operations.</p></li>
@@ -729,7 +768,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3创建。
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4创建。
     <br/>
   </p>
 </div>

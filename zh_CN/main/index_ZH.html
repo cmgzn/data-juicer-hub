@@ -32,7 +32,8 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b26f9bd0" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=34d13042" />
+    <link rel="stylesheet" type="text/css" href="_static/ask-ai-widget.css?v=62e39679" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -40,14 +41,18 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
+    <script>window.JUICER_API_URL = 'https://datajuicer.online:443';</script>
     <script src="_static/documentation_options.js?v=91bfbbb6"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/translations.js?v=540d3cec"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index_ZH';</script>
-    <script src="_static/sidebar.js?v=9ff78125"></script>
+    <script src="_static/sidebar.js?v=3fc1065c"></script>
+    <script src="_static/switcher-mobile.js?v=07875724"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="_static/ask-ai-widget.js?v=fab4d2ee"></script>
     <link rel="icon" href="_static/icon.png"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -208,25 +213,36 @@
       
         <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="./../../en/main/index.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="./../../en/main/index.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="./../../zh_CN/main/index_ZH.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="./../../zh_CN/main/index_ZH.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -234,18 +250,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="./../main/index_ZH.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -364,25 +385,36 @@
         
           <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="./../../en/main/index.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="./../../en/main/index.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="./../../zh_CN/main/index_ZH.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="./../../zh_CN/main/index_ZH.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -390,18 +422,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="./../main/index_ZH.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -444,14 +481,14 @@
                 <article class="bd-article">
                   
   <section id="data-juicer-hub">
-<h1>Data-Juicer-Hub<a class="headerlink" href="#data-juicer-hub" title="Link to this heading">#</a></h1>
+<h1>Data-Juicer-Hub<a class="headerlink" href="#data-juicer-hub" title="链接到此标题。">#</a></h1>
 <p>面向各种预训练/微调任务的社区驱动型数据处理配方与最佳实践。</p>
 <section id="id1">
-<h2>文档<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2>文档<a class="headerlink" href="#id1" title="链接到此标题。">#</a></h2>
 <p>详细配方说明请访问 <a class="reference external" href="https://datajuicer.github.io/data-juicer-hub/zh_CN/main/docs/RecipeGallery_CN.html">这里</a>。</p>
 </section>
 <section id="id2">
-<h2>快速开始<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<h2>快速开始<a class="headerlink" href="#id2" title="链接到此标题。">#</a></h2>
 <p>本项目提供了多种针对不同任务的数据处理配方，你可以通过克隆此仓库并使用 <code class="docutils literal notranslate"><span class="pre">--config</span></code> 参数指定目标配方文件的本地路径来直接使用它们：</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="c1"># 克隆到你本地机器上的某个位置</span>
 git<span class="w"> </span>clone<span class="w"> </span>https://github.com/datajuicer/data-juicer-hub.git
@@ -461,7 +498,7 @@ dj-process<span class="w"> </span>--config<span class="w"> </span>&lt;data-juice
 </div>
 </section>
 <section id="id3">
-<h2>贡献指南<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<h2>贡献指南<a class="headerlink" href="#id3" title="链接到此标题。">#</a></h2>
 <p>这是一个由社区驱动的仓库，欢迎你上传自己的数据处理配方！😄</p>
 </section>
 </section>
@@ -472,6 +509,8 @@ dj-process<span class="w"> </span>--config<span class="w"> </span>&lt;data-juice
 <li class="toctree-l2"><a class="reference internal" href="docs/AlpacaCOT_ZH.html">Alpaca-CoT 完善配置文件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/AnnotationNotificationSystem.html">Notification System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/BLOOM_ZH.html">BLOOM 配置文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/README_ZH.html">Notebooks 教程</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/README_ZH.html#id2">📝 教程内容概览</a></li>
 <li class="toctree-l2"><a class="reference internal" href="docs/RedPajama_ZH.html">Redpajama 配置文件</a></li>
 </ul>
 </li>
@@ -571,7 +610,7 @@ dj-process<span class="w"> </span>--config<span class="w"> </span>&lt;data-juice
         <div class="footer-item">
 
   <p class="sphinx-version">
-    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3创建。
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4创建。
     <br/>
   </p>
 </div>

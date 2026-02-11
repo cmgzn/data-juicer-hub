@@ -32,7 +32,8 @@
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b26f9bd0" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=34d13042" />
+    <link rel="stylesheet" type="text/css" href="_static/ask-ai-widget.css?v=62e39679" />
   
   <!-- So that users can add custom icons -->
   <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -40,14 +41,18 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
 
+    <script>window.JUICER_API_URL = 'https://datajuicer.online:443';</script>
     <script src="_static/documentation_options.js?v=91bfbbb6"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="_static/copybutton.js?v=f281be69"></script>
-    <script src="_static/translations.js?v=beaddf03"></script>
+    <script src="_static/translations.js?v=540d3cec"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs_index_ZH';</script>
-    <script src="_static/sidebar.js?v=9ff78125"></script>
+    <script src="_static/sidebar.js?v=3fc1065c"></script>
+    <script src="_static/switcher-mobile.js?v=07875724"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="_static/ask-ai-widget.js?v=fab4d2ee"></script>
     <link rel="icon" href="_static/icon.png"/>
     <link rel="index" title="索引" href="genindex.html" />
     <link rel="search" title="搜索" href="search.html" />
@@ -209,25 +214,36 @@
       
         <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="./../../en/main/docs_index.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="./../../en/main/docs_index.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="./../../zh_CN/main/docs_index_ZH.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="./../../zh_CN/main/docs_index_ZH.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -235,18 +251,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="./../main/docs_index_ZH.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -363,25 +384,36 @@
         
           <div class="navbar-item"><div class="navbar-switcher-container">
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        🌐 zh-CN
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
+  <div class="navbar-dropdown language-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select language: zh-CN">
+      <span class="switcher-icon" aria-hidden="true">🌐</span>
+      <span class="switcher-text">zh-CN</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
       <div class="dropdown-content">
         
-        <a href="./../../en/main/docs_index.html"
-           class="dropdown-item ">
-          English
-        </a>
+          
+          
+          <a href="./../../en/main/docs_index.html"
+             class="dropdown-item "
+             role="menuitem"
+             >
+            English
+          </a>
         
-        <a href="./../../zh_CN/main/docs_index_ZH.html"
-           class="dropdown-item ">
-          简体中文
-        </a>
+          
+          
+          <a href="./../../zh_CN/main/docs_index_ZH.html"
+             class="dropdown-item active"
+             role="menuitem"
+             aria-current="true">
+            简体中文
+          </a>
         
       </div>
     </div>
@@ -389,18 +421,23 @@
   
 
   
-  <div class="navbar-dropdown">
-    <div class="navbar-dropdown-trigger">
-      <span class="dropdown-label">
-        📦 main
-      </span>
-      <i class="fa-solid fa-chevron-down dropdown-icon"></i>
-    </div>
-    <div class="navbar-dropdown-panel">
-      <div class="dropdown-content version-list">
+  <div class="navbar-dropdown version-dropdown">
+    <button type="button" 
+            class="navbar-dropdown-trigger" 
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Select version: main">
+      <span class="switcher-icon" aria-hidden="true">📦</span>
+      <span class="switcher-text">main</span>
+      <i class="fa-solid fa-chevron-down dropdown-icon" aria-hidden="true"></i>
+    </button>
+    <div class="navbar-dropdown-panel" role="menu">
+      <div class="dropdown-content">
         
         <a href="./../main/docs_index_ZH.html"
-           class="dropdown-item active">
+           class="dropdown-item active"
+           role="menuitem"
+           aria-current="true">
           main
         </a>
         
@@ -424,6 +461,8 @@
 <li class="toctree-l1"><a class="reference internal" href="docs/AlpacaCOT_ZH.html">Alpaca-CoT 完善配置文件</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/AnnotationNotificationSystem.html">Notification System</a></li>
 <li class="toctree-l1"><a class="reference internal" href="docs/BLOOM_ZH.html">BLOOM 配置文件</a></li>
+<li class="toctree-l1"><a class="reference internal" href="docs/README_ZH.html">Notebooks 教程</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="docs/RedPajama_ZH.html">Redpajama 配置文件</a></li>
 </ul>
 </div>
@@ -483,7 +522,7 @@
                 <article class="bd-article">
                   
   <section id="id1">
-<h1>文档<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>文档<a class="headerlink" href="#id1" title="链接到此标题。">#</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="docs/RecipeGallery_ZH.html">数据菜谱Gallery</a><ul>
@@ -514,6 +553,15 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs/BLOOM_ZH.html">BLOOM 配置文件</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="docs/BLOOM_ZH.html#oscar">Oscar</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="docs/README_ZH.html">Notebooks 教程</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/README_ZH.html#id1">🚀 快速开始</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="docs/README_ZH.html#id2">📝 教程内容概览</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="docs/README_ZH.html#id3">💡 推荐学习路径</a></li>
+<li class="toctree-l2"><a class="reference internal" href="docs/README_ZH.html#id4">📚 更多资源</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="docs/RedPajama_ZH.html">Redpajama 配置文件</a><ul>
@@ -615,7 +663,7 @@
         <div class="footer-item">
 
   <p class="sphinx-version">
-    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.2.3创建。
+    由 <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.0.4创建。
     <br/>
   </p>
 </div>
